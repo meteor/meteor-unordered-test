@@ -8,15 +8,8 @@ Package.describe({
 Package.onUse(function(api) {
   api.versionsFrom('1.0');
 
-  api.use([
-      'modular:base@1.0.0',
-  ], ['client', 'server']);
-
   api.use('modular:main@1.0.0');
 
-  api.addFiles([
-    'lib/main.js',
-  ], ['server', 'client']);
-
+  api.addFiles('init.js', 'server');
   api.export('ModularClass', ['client', 'server']);
 });
