@@ -8,9 +8,9 @@ Package.describe({
 Package.onUse(function(api) {
   api.versionsFrom('1.0');
 
-  api.use('modular:init@1.0.0', { unordered: true} );
+ //  api.use('modular:init@1.0.0', { unordered: true} );
 
-//  api.imply('modular:init@1.0.0');
+  api.imply('modular:init@1.0.0');
 
   api.addFiles('main.js', 'server');
 });
